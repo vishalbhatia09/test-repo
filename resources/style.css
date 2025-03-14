@@ -1,0 +1,71 @@
+/* Reset default margin & padding */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* Sidebar (Left Panel) */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #333; /* Dark grey background */
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    border-right: 2px solid #555;
+}
+
+/* Sidebar Title */
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: 2px solid #777;
+    padding-bottom: 10px;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: white;
+    background: #555;
+    border-radius: 4px;
+}
+
+/* Main Content */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
